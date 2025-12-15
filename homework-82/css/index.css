@@ -116,11 +116,12 @@
     width: 22px;
     height: 9px;
 
-    background-image: url(/images/arrow-right-icon.svg);
+    background-image: url(../images/arrow-right-icon.svg);
 
     transition: transform .4s;
 }
 
 .news-link:hover::after {
     transform: translateX(5px);
+
 }
