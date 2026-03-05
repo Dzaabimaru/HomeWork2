@@ -228,7 +228,6 @@
     }
 }
 
-/* Иконки */
 .header__actions {
     display: flex;
     gap: 16px;
@@ -343,4 +342,5 @@
     body.lock {
         overflow: hidden;
     }
+
 }
