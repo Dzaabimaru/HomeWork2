@@ -1,0 +1,106 @@
+.mailing {
+    background: linear-gradient(to bottom, #ffffff 50%, #f0f0f0 50%);
+}
+
+.mailing__container {
+    display: flex;
+    align-items: center;
+    background-color: var(--main-color);
+    border-radius: 20px;
+    padding: 36px 64px;
+    gap: 74px;
+}
+
+.mailing__title {
+    max-width: 689px;
+
+    font-family: var(--second-family);
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 113%;
+    color: #fff;
+}
+
+.subscription-form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    width: 100%;
+    max-width: 349px;
+}
+
+.input-wrapper, .subscription-button {
+    height: 47px;
+    border-radius: 62px;
+
+    font-family: var(--font-family);
+    font-size: 16px;
+}
+
+.input-wrapper {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.input-wrapper input {
+    border: none;
+    outline: none;
+    width: 100%;
+    margin-left: 12px;
+
+    font-weight: 400;
+    color: var(--main-color);
+    font-family: var(--font-family);
+}
+
+.input-wrapper input::placeholder {
+    color: #00000066;
+}
+
+.subscription-button {
+    font-weight: 500;
+
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.subscription-button:hover {
+    transform: scale(1.05);
+}
+.subscription-button:active {
+    transform: scale(0.99);
+}
+
+@media (width <= 1140px) {
+    .mailing__container {
+        gap: clamp(2rem, 0.635rem + 5.6vw, 4.625rem);
+    }
+
+    .mailing__title {
+        font-size: 35px;
+    }
+}
+
+@media (width <= 768px) {
+    .mailing__title {
+        text-align: center;
+    }
+    .mailing__container {   
+        flex-direction: column;
+    }
+}
+
+@media (width <= 576px) {
+    .mailing__container {   
+        padding: 28px 20px;
+    }
+
+    .mailing__title {
+        text-align: start;
+        font-size: 30px;
+    }
+}

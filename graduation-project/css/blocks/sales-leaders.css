@@ -1,0 +1,138 @@
+.sales-leaders {
+    padding: 72px 0 79px 0;
+}
+
+.sales-leaders__container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 55px;
+    flex-wrap: wrap;
+}
+
+
+
+.stars-outer__striped-shirt {
+    position: relative;
+    display: inline-block;
+    font-size: 24px;
+    color: transparent;
+    letter-spacing: 2px;
+}
+
+.stars-outer__striped-shirt::before {
+    content: '★★★★★';
+}
+
+.stars-inner__striped-shirt {
+    position: absolute;
+    top: 0;
+    left: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #ffca28;
+}
+
+.stars-inner__striped-shirt::before {
+    content: '★★★★★';
+}
+
+
+.stars-outer__courage-T-shirt {
+    position: relative;
+    display: inline-block;
+    font-size: 24px;
+    color: transparent;
+    letter-spacing: 2px;
+}
+
+.stars-outer__courage-T-shirt::before {
+    content: '★★★★';
+}
+
+.stars-inner__courage-T-shirt {
+    position: absolute;
+    top: 0;
+    left: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #ffca28;
+}
+
+.stars-inner__courage-T-shirt::before {
+    content: '★★★★';
+}
+
+
+.stars-outer__denim-shorts {
+    position: relative;
+    display: inline-block;
+    font-size: 24px;
+    color: transparent;
+    letter-spacing: 2px;
+}
+
+.stars-outer__denim-shorts::before {
+    content: '★★★';
+}
+
+.stars-inner__denim-shorts {
+    position: absolute;
+    top: 0;
+    left: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #ffca28;
+}
+
+.stars-inner__denim-shorts::before {
+    content: '★★★';
+}
+
+
+.stars-outer__black-jeans {
+    position: relative;
+    display: inline-block;
+    font-size: 24px;
+    color: transparent;
+    letter-spacing: 2px;
+}
+
+.stars-outer__black-jeans::before {
+    content: '★★★★★';
+}
+
+.stars-inner__black-jeans {
+    position: absolute;
+    top: 0;
+    left: 0;
+    white-space: nowrap;
+    width: 90%;
+    overflow: hidden;
+    color: #ffca28;
+}
+
+.stars-inner__black-jeans::before {
+    content: '★★★★★';
+}
+
+
+
+@media (width <=876px) {
+    .sales-leaders__container article:nth-last-of-type(-n+2) {
+        display: none;
+    }
+}
+
+@media (width <=639px) {
+    .sales-leaders {
+    padding: 40px 0 40px 0;
+}
+}
+
+@media (width <=576px) {
+    .sales-leaders__title {
+        font-size: 30px;
+        text-align: center;
+    }
+}
